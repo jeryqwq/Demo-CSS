@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<style>
+			/*li:first-child{
+			background: #000000;
+			}
+			li:last-child{
+				background: #000000;
+			}
+			li:nth-child(2){
+				background: #0000FF;
+			}
+			li:nth-child(even){
+				background: #008000;
+			}*/
+			
+			
+			/*li:nth-last-child(odd){
+				background: #008000;
+			}
+			li:nth-last-child(even){
+				background: #333333;
+			}*/
+		/*	4n每四次一个循环,+1代表每次第一个*/
+			/*li:nth-child(4n+1){
+				background: #000000;
+			}
+			li:nth-child(4n+2){
+				background: #0000FF;
+			}
+			li:nth-child(4n+3){
+				background: #008000;
+			}
+			li:nth-child(4n+4){
+				background: #00BFFF;
+			}*/
+			
+			
+/*			仅对只有一个元素的进行匹配*/
+			li:only-child{
+				background: #FF0000;
+			}
+		</style>
+		<h2>选择器first-child  last-child nth-child nth-last-child</h2>
+		<ul>
+			<li>唯一的</li>
+		</ul>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+	</body>
+</html>

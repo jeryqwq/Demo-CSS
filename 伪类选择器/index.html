@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+			<style>
+				/*类选择器*/
+			p:left{
+				text-align: left;
+				color:red;
+			}
+			p:right{
+				text-align: right;
+				color: red;
+			}
+			
+			
+			
+			/*伪类选择器*/
+			a:link{
+				color:red;
+			}
+			a:visited{
+				color:green;
+			}
+			a:hover{
+				color:yellow;
+			}
+			
+			
+			
+			/*伪元素选择器*/
+			p:first-line{/*第一行样式*/
+				color: green;
+			}
+			p:first-letter{/*首字样式*/
+				font-size: 40px;
+				color:deepskyblue;
+			}
+			p:after{/*在尾部追加内容*/
+				content:'尾部追加';
+			}
+			p:before{/*在首部追加内容*/
+				content: '这是追加的';
+			}
+			
+			
+			
+			/*结构性伪类选择器*/
+			:root{/*html设置的全局样式*/
+				background-color: blue;
+			}
+			body*:not(h1){/*有内容显示的区域   not除了的意思*/
+				background-color: red;
+				color: #F23FFF;
+			}
+			:empty{/*内容为空时的属性*/
+				background-color: orange;
+			}
+		</style>
+		<p id='left'>leftadsasasd大时代阿撒大苏打</p>
+<h1>not选择器</h1>
+	<a href="123.html">这是个测试</a>
+	<p id='right'>right</p>
+	<table border='1' cellpadding="0" cellspacing="0" width="50%" height="50%">
+	<tr>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+		<tr>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td>1  a</td>
+	</tr>
+	<style>
+		:target{
+			background-color: #00BFFF;
+		}
+	</style>
+	</table>
+	<a href="#A">A</a>
+	<a href="#B">B</a>
+	<a href="#C">C</a>
+	<a href="#D">D</a>
+	<a href="#E">E</a>
+	<div id='A'>
+		<h2>A</h2>
+		<p>内容</p>
+	</div>
+		<div id='B'>
+		<h2>B</h2>
+		<p>内容</p>
+	</div>
+		<div id='C'>
+		<h2>C</h2>
+		<p>内容</p>
+	</div>
+		<div id='D'>
+		<h2>D</h2>
+		<p>内容</p>
+	</div>
+		<div id='E'>
+		<h2>E</h2>
+		<p>内容</p>
+	</div>
+	</body>
+</html>
